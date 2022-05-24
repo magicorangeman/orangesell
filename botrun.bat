@@ -4,7 +4,7 @@ call %~dp0telegram\venv\Scripts\activate
 
 cd %~dp0telegram
 
-rem set TOKEN=5341688388:AAGzxLta3XjmeSRSwQTds3QzsHdA1kAW_RA
+rem set TOKEN=%%
 
 rem python C:\Users\Admin\Desktop\telegram\pandabot.py
 
