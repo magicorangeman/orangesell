@@ -1,0 +1,14 @@
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\bin\Debug\StructBenchmarking.exe.config
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\bin\Debug\StructBenchmarking.exe
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\bin\Debug\StructBenchmarking.pdb
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\bin\Debug\nunit.framework.dll
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\bin\Debug\ZedGraph.dll
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\bin\Debug\ZedGraph.xml
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\obj\Debug\StructBenchmarking.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\obj\Debug\StructBenchmarking.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\obj\Debug\StructBenchmarking.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\obj\Debug\StructBenchmarking.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\obj\Debug\StructBenchmarking.csproj.CopyComplete
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\obj\Debug\StructBenchmarking.exe
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\obj\Debug\StructBenchmarking.pdb
+C:\Users\Admin\Documents\GitHub\orangesell\С#\StructBenchmarking.csproj\obj\Debug\StructBenchmarking.csproj.SuggestedBindingRedirects.cache
