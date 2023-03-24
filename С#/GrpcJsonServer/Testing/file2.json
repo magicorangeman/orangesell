@@ -1,0 +1,8 @@
+{"type": "eventlog", "notmessage" : "log message 1"} 
+{"type": "eventlog", "message": "log message 2"}  
+{"type": "error", "message": "log message 1"} 
+{"type": "error", "message": "log message 2"}
+{"type": "eventlog", "message": "log message 1"} 
+{"type": "eventlog", "message": "log message 2"}
+{"type": "eventlog", "message": "log message 1"} 
+{"type": "exception", "message": "log message 2"}

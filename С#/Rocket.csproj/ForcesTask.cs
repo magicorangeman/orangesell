@@ -8,7 +8,7 @@ public class ForcesTask
 	/// Создает делегат, возвращающий по ракете вектор силы тяги двигателей этой ракеты.
 	/// Сила тяги направлена вдоль ракеты и равна по модулю forceValue.
 	/// </summary>
-	public static RocketForce GetThrustForce(double forceValue) => r => new Vector(Math.Cos(r.Direction) * forceValue, Math.Sin(r.Direction) * forceValue);
+	public static RocketForce GetThrustForce(double forceValue) => r => new Vector(Math.Cos(r.Direction), Math.Sin(r.Direction)) * forceValue;
 
 	/// <summary>
 	/// Преобразует делегат силы гравитации, в делегат силы, действующей на ракету
@@ -19,10 +19,10 @@ public class ForcesTask
 	/// Суммирует все переданные силы, действующие на ракету, и возвращает суммарную силу.
 	/// </summary>
 	public static RocketForce Sum(params RocketForce[] forces) => r =>
-		{
-			var result = new Vector(0,0);
-			foreach (var force in forces)
-				result += force(r);
-			return result;
-		};
+	{
+		var result = new Vector(0,0);
+		foreach (var force in forces)
+			result += force(r);
+		return result;
+	};
 }

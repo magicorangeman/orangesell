@@ -1,0 +1,50 @@
+syntax = "proto3";
+option csharp_namespace = "GrpcJsonServer";
+
+package jsonSender;
+
+// The connection success service definition.
+service Connection {
+	rpc Connect (ConnectionRequest) returns (ConnectionStatus);
+}
+
+// The request message containing the user's name.
+message ConnectionRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message ConnectionStatus {
+  string message = 1;
+}
+
+service Sender {
+  rpc Upload (stream FileUploadRequest) returns (FileUploadResponse);
+}
+
+message FileUploadRequest {
+	string type = 1;
+	bytes content = 2;
+}
+
+message FileUploadResponse {
+  string type = 1;
+  string status = 2;
+}
+
+service JsonListSender {
+  rpc Upload(stream JsonListUploadRequest) returns(JsonListUploadResponse);
+}
+
+message JsonList {
+  string type = 1;
+  int32 number = 2;
+}
+
+message JsonListUploadRequest {
+	JsonList list = 1;
+}
+
+message JsonListUploadResponse {
+  string type = 1;
+}

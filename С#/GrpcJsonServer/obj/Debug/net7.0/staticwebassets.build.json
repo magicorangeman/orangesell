@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tYhB9fI7ZKV5UqJJyGdCUdQYf7HjK8dQOu66eHJxdyI=",
+  "Source": "GrpcJsonServer",
+  "BasePath": "_content/GrpcJsonServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

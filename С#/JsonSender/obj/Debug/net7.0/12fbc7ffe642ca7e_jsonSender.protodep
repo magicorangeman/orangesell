@@ -1,0 +1,2 @@
+obj\Debug\net7.0\Protos/JsonSender.cs \
+obj\Debug\net7.0\Protos/JsonSenderGrpc.cs: Protos/jsonSender.proto
