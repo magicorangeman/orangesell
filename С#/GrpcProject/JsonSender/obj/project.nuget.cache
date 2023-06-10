@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fpjtQrYo1eJQAryC7fasjsfXVdgSZe16OSeCGALusUlL5yh1wG+vkXCVjx4d2uE8HRnl/PdK+H1Ohrw1UgNjVQ==",
+  "dgSpecHash": "fpry8dVoEmve4HVaACrYVPyHn6ZV7hUWXuUpPSidaIkmcpupvmWV28A21XlQElVVrHfa46QBAHBrOT8eTr/iAQ==",
   "success": true,
-  "projectFilePath": "C:\\Development\\С#\\JsonSender\\JsonClient.csproj",
+  "projectFilePath": "C:\\Development\\С#\\GrpcProject\\JsonSender\\JsonClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\google.protobuf\\3.22.1\\google.protobuf.3.22.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\grpc.core.api\\2.52.0\\grpc.core.api.2.52.0.nupkg.sha512",

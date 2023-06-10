@@ -1,42 +1,44 @@
-﻿using DynamicData;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace Dungeon;
 
 public class DungeonTask
 {
-	public static MoveDirection[] FindShortestPath(Map map)
-	{
-		return new MoveDirection[0];
-	}
-
-	public static MoveDirection[] PathIntoMoveInstructions(List<Point> path)
-	{
-		return path
-			.Select(x => x - path.Skip(path.IndexOf(x) + 1).FirstOrDefault())
-			.SkipLast(1)
-			.Select(x => offsetToDirection[x])
-			.ToArray();
-	}
-    private static List<List<Point>> GetPaths(Map map)
+    public static MoveDirection[] FindShortestPath(Map map)
     {
-        var pathsToChests = BfsTask.FindPaths(map, map.InitialPosition, map.Chests)
-            .Select(x => x.ToList())
-            .ToList();
-        var pathsToExit = BfsTask.FindPaths(map, map.Exit, map.Chests)
-            .Select(x => x.ToList())
-            .Reverse()
-            .ToList();
-        var paths = 
-        return paths;
+        var path = GetShortestPath(map);
+        return PathIntoMoveInstructions(path);
     }
 
-    private static readonly Dictionary<Point, MoveDirection> offsetToDirection = new()
+    public static MoveDirection[] PathIntoMoveInstructions(List<Point> path)
     {
-        { new Point(0, -1), MoveDirection.Up },
-        { new Point(0, 1), MoveDirection.Down },
-        { new Point(-1, 0), MoveDirection.Left },
-        { new Point(1, 0), MoveDirection.Right }
-    };
+        return path
+            .Zip(path.Skip(1))
+            .Select(x => x.Second - x.First)
+            .Select(x => Walker.ConvertOffsetToDirection(x))
+            .ToArray();
+    }
+
+    private static List<Point> GetShortestPath(Map map)
+    {
+        if (map.Exit == null) return new List<Point>();
+        int minDistance = map.Dungeon.Length * 2;
+        var pathsToChests = BfsTask.FindPaths(map, map.InitialPosition, map.Chests);
+        if (!pathsToChests.Any())
+        {
+            var path = BfsTask.FindPaths(map, map.Exit, new Point[] { map.InitialPosition });
+            if (path.Any()) return path.First().ToList();
+            else return new List<Point>();
+        }
+
+        var pathFromExit = BfsTask.FindPaths(map, map.Exit, map.Chests);
+        if (!pathFromExit.Any()) return new List<Point>();
+
+        var fullPaths = pathsToChests.Join(pathFromExit, fromStart => fromStart.Value, fromExit => fromExit.Value,
+                                      (fromStart, fromExit) => (fromStart, fromExit));
+        if (!fullPaths.Any()) return new List<Point>();
+        var result = fullPaths.MinBy(path => path.fromStart.Length + path.fromExit.Length);
+        return result.fromStart.Skip(1).Reverse().Concat(result.fromExit).ToList();
+    }
 }

@@ -2,6 +2,6 @@
 
 public enum MapCell
 {
-	Wall,
-	Empty
+    Wall,
+    Empty
 }

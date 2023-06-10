@@ -712,11 +712,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\С#\\JsonSender\\JsonClient.csproj",
+      "projectUniqueName": "C:\\Development\\С#\\GrpcProject\\JsonSender\\JsonClient.csproj",
       "projectName": "JsonClient",
-      "projectPath": "C:\\Development\\С#\\JsonSender\\JsonClient.csproj",
+      "projectPath": "C:\\Development\\С#\\GrpcProject\\JsonSender\\JsonClient.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\С#\\JsonSender\\obj\\",
+      "outputPath": "C:\\Development\\С#\\GrpcProject\\JsonSender\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
