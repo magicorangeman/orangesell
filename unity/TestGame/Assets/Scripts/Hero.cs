@@ -66,8 +66,8 @@ public class Hero : MonoBehaviour
     {
         if (pickedItem != null)
         {
-            pickedItem.transform.position = transform.position + transform.right * interactionZone;
-            pickedItem = closestItem;
+            pickedItem.transform.position = transform.position + new Vector3(0.5f * interactionZone, 0);
+            pickedItem = null;
         }
     }
 
