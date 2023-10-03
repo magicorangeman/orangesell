@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/OfflineScene.unity
+    guid: 81ee12118cf570548a629be5aa2d420f
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerScene.unity
+    guid: 457d44512941bbb4e9364557a4b85eee
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 126c29411c7ea344c907682ee2c39339, type: 2}
