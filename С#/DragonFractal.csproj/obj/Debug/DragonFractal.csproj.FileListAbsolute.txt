@@ -1,7 +1,0 @@
-C:\Users\Admin\Desktop\DragonFractal.csproj\bin\Debug\DragonFractal.exe.config
-C:\Users\Admin\Desktop\DragonFractal.csproj\bin\Debug\DragonFractal.exe
-C:\Users\Admin\Desktop\DragonFractal.csproj\bin\Debug\DragonFractal.pdb
-C:\Users\Admin\Desktop\DragonFractal.csproj\obj\Debug\DragonFractal.csproj.AssemblyReference.cache
-C:\Users\Admin\Desktop\DragonFractal.csproj\obj\Debug\DragonFractal.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Desktop\DragonFractal.csproj\obj\Debug\DragonFractal.exe
-C:\Users\Admin\Desktop\DragonFractal.csproj\obj\Debug\DragonFractal.pdb
